@@ -60,8 +60,9 @@ app.post("/redirect",function(req,res){
     res.redirect("/");
 })
 
+const Port = process.env.PORT || 3000;
 
-app.listen(3000,function(){
+app.listen(PORT,function(){
     console.log("Server is running on port 3000");
 })
 
