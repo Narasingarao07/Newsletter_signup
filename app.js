@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     const url ="https://us7.api.mailchimp.com/3.0/lists/aa70a4f8db";
     const options={
         method:"POST",
-        auth:"narasing1:7ec5a2f0fd06a163cf04ea7b330df404-us7"
+        auth:"narasing1:c5be1cb69e762a4806083d500b4395ef-us7"
     }
 
    const request = https.request(url,options,function(response){
@@ -60,9 +60,8 @@ app.post("/redirect",function(req,res){
     res.redirect("/");
 })
 
- const PORT = process.env.PORT || 3000;
 
-app.listen(PORT,function(){
+app.listen(3000,function(){
     console.log("Server is running on port 3000");
 })
 
@@ -71,7 +70,7 @@ app.listen(PORT,function(){
 
 // Api key
 
-// 7ec5a2f0fd06a163cf04ea7b330df404-us7
+// c5be1cb69e762a4806083d500b4395ef-us7
 
 
 // Audience Id
